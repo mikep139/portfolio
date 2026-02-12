@@ -1,10 +1,64 @@
-html {
+html, body {
     margin: 0;
     padding: 0;
+    background-color: lightgrey;
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
+nav {
+    padding: 12px;
+    border-bottom: 1px solid darkgray;
+}
+
+ul {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+li.logo {
+    margin-right: auto;
+    font-size: 1.125rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: darkslateblue;
+    color: orange;
+    border-radius: 5%;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.project {
+    flex: 0 0 auto;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
