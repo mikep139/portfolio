@@ -1,6 +1,15 @@
+/* 
+TODO - style flat buttons
+TODO - add link functionality to buttons
+TODO - fix hero img placement
+TODO - add hover elements to flex cards
+TODO - header text needs smoothing
+TODO - does header need texture? 
+*/
 
 :root {
     --primary-accent: rgb(153 51 255); 
+    --primary-color: rgb(255 255 255);
 }
 
 html, body {
@@ -9,7 +18,7 @@ html, body {
     background: radial-gradient(
     circle at top,
     rgba(153, 51, 255, 0.08),
-    rgba(255, 255, 255, 1) 55%
+    var(--primary-color) 55%
   );
     /* 
     background-color: #fff; 
@@ -30,14 +39,14 @@ header {
     top: 0;
     z-index: 1000;
     background-color: var(--primary-accent);
-    color: #fff;
+    color: var(--primary-color);
     box-shadow: 0 4px 12px rgba(153, 51, 255, 0.12);
     backdrop-filter: blur(8px);
 }
 
 .navbar {
     padding: 12px;
-    border-bottom: 1px solid darkgray;
+    border-bottom: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +66,7 @@ header {
 ul a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .logo {
@@ -70,11 +79,32 @@ ul a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: var(--primary-accent);
+    color: var(--primary-color);
+    border-radius: 12px;
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .img-headshot {
@@ -88,19 +118,6 @@ ul a {
     max-width: 300px;
     flex: 1 1 150px;
     border-radius: 12px;
-}
-
-.hero-btns {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.btn {
-    background-color: var(--primary-accent);
-    color: #fff;
-    border-radius: 12px;
-    padding: .5rem;
 }
 
 .projects-container {
@@ -129,7 +146,7 @@ ul a {
     text-align: center;
     overflow: hidden;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.75);
+    background: var(--primary-color);
     border: 1px solid rgba(153, 51, 255, 0.18); 
     box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.05),
@@ -141,7 +158,13 @@ ul a {
 
 .contact-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: black;
 }
