@@ -1,9 +1,19 @@
-/* TODO - replace img with compressed img */
+
+:root {
+    --primary-accent: rgb(153 51 255); 
+}
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background: radial-gradient(
+    circle at top,
+    rgba(153, 51, 255, 0.08),
+    rgba(255, 255, 255, 1) 55%
+  );
+    /* 
+    background-color: #fff; 
+    */
     font-family: "DM Sans", sans-serif;
 }
 
@@ -19,9 +29,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #9933ff;
+    background-color: var(--primary-accent);
     color: #fff;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 4px 12px rgba(153, 51, 255, 0.12);
     backdrop-filter: blur(8px);
 }
 
@@ -71,12 +81,13 @@ ul a {
     max-width: 300px;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px var(--primary-accent);
 }
 
 .img-card {
     max-width: 300px;
     flex: 1 1 150px;
+    border-radius: 12px;
 }
 
 .hero-btns {
@@ -86,9 +97,9 @@ ul a {
 }
 
 .btn {
-    background-color: #9933ff;
+    background-color: var(--primary-accent);
     color: #fff;
-    border-radius: 5%;
+    border-radius: 12px;
     padding: .5rem;
 }
 
@@ -113,11 +124,19 @@ ul a {
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    border: 1px solid darkgray;
-    border-radius: 5px;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(153, 51, 255, 0.18); 
+    box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.05),
+    0 10px 24px rgba(153, 51, 255, 0.06);
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .contact-container {
