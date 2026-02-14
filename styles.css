@@ -97,9 +97,11 @@ ul a {
     background-color: var(--primary-accent);
     color: var(--primary-color);
     border-radius: 12px;
-    padding: .5rem;
+    padding: .75rem;
     cursor: pointer;
     font-weight: 500;
+    border: none;
+    outline: none;
 }
 
 .btn a {
