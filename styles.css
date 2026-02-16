@@ -86,6 +86,7 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .hero-text {
@@ -97,6 +98,13 @@ ul a:hover {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+
+.img-headshot {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px var(--primary-accent);
 }
 
 .btn {
@@ -123,13 +131,6 @@ ul a:hover {
 
 .btn:active {
     background-color: var(--button-active);
-}
-
-.img-headshot {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px var(--primary-accent);
 }
 
 .img-card {
