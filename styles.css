@@ -193,6 +193,7 @@ ul a:hover {
 }
 
 .img-card {
+    width: 100%;
     max-width: 300px;
     flex: 1 1 150px;
     border-radius: 12px;
@@ -211,6 +212,7 @@ ul a:hover {
 .card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -291,7 +293,11 @@ ul a:hover {
     }
     
     .card-container {
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -300,11 +306,16 @@ ul a:hover {
     .hero {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
     .card-container {
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
