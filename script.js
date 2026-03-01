@@ -1,5 +1,7 @@
 const body = document.querySelector("body");
 const button = document.querySelector("#dark-mode-controls");
+const hamburger = document.querySelector("#hamburger-container");
+const navLinks = document.querySelector(".nav-links");
 
 function toggleDarkMode() {
     body.classList.toggle("dark-mode");
@@ -10,6 +12,7 @@ function toggleDarkMode() {
     }
 }
 
+// on page RELOAD checks localStorage for dark mode status
 function checkDarkMode() {
     if (localStorage.getItem("darkMode") === "dark-mode"){ 
         body.classList.add("dark-mode");
@@ -21,3 +24,9 @@ function checkDarkMode() {
 }
 button.addEventListener("change", toggleDarkMode);
 document.addEventListener("DOMContentLoaded", checkDarkMode);
+
+function toggleHamburgerMenu() {
+    navLinks.classList.toggle("mobile-menu");
+}
+
+hamburger.addEventListener("click", toggleHamburgerMenu);

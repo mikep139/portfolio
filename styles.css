@@ -128,7 +128,7 @@ ul a:hover {
     font-family: "Permanent Marker", cursive;
 }
 
-.hamburger-container {
+#hamburger-container {
     display: none;
 }
 
@@ -252,16 +252,37 @@ ul a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger-container {
+    
+    #hamburger-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 5px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-links.mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        margin: 0;
+        list-style-type: none;
+        background-color: var(--primary-accent);
     }
     
     .card-container {
