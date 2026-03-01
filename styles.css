@@ -86,7 +86,8 @@ header {
 }
 
 .btn-track {
-    display: block;
+    display: flex;
+    flex-shrink: 0;
     position: relative;
     width: 50px;
     height: 26px;
@@ -258,6 +259,7 @@ ul a:hover {
     #hamburger-container {
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         justify-content: center;
         align-items: center;
         gap: 5px;
@@ -303,6 +305,10 @@ ul a:hover {
 
 @media screen and (max-width: 480px) {
 
+    .logo {
+        font-size: 1.5rem;
+    }
+    
     .hero {
         display: flex;
         flex-direction: column;
