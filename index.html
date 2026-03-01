@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-<body class="dark-mode">
+<body>
     <header>
         <nav class="navbar">
             <div class="logo">Mike Puckett</div>
@@ -21,7 +21,10 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="btn-dark-mode"><input type="button" value="dark-mode"></button>
+            <input id="dark-mode-controls" type="checkbox" title="Toggle dark mode">
+            <label for="dark-mode-controls" class="btn-track">
+              <div class="dark-mode-toggle"></div>
+            </label>
         </nav>
     </header>
     <div class="hero" id="about">
@@ -66,7 +69,7 @@
       <p><a href="mailto:mikepuckettdev@pm.me">Email me</a></p>
     </div>
 
-    <script scr="script.js">
+    <script src="script.js">
     </script>
 </body>
 </html>
