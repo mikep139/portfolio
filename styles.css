@@ -154,6 +154,10 @@ ul a:hover {
     flex-direction: column;
 }
 
+.hero-text h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
 .hero-btns {
     display: flex;
     flex-direction: row;
