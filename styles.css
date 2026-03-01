@@ -128,6 +128,17 @@ ul a:hover {
     font-family: "Permanent Marker", cursive;
 }
 
+.hamburger-container {
+    display: none;
+}
+
+.hamburger-bar {
+    width: 35px;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
 .hero {
     display: flex;
     flex-direction: row;
@@ -241,13 +252,26 @@ ul a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
     .card-container {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 480px) {
-  .card-container {
+  
+    .card-container {
         flex-direction: column;
     }
 }
