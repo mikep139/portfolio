@@ -266,7 +266,10 @@ ul a:hover {
     }
 
     .nav-links {
-        display: none;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
     }
     
     .nav-links.mobile-menu {
@@ -283,6 +286,8 @@ ul a:hover {
         margin: 0;
         list-style-type: none;
         background-color: var(--primary-accent);
+        max-height: 300px;
+        opacity: 1;
     }
     
     .card-container {
@@ -291,7 +296,14 @@ ul a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .card-container {
         flex-direction: column;
     }
